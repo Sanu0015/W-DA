@@ -1,0 +1,186 @@
+<html>
+<head>
+<title>  unit-2 </title>
+</head>
+ <style>
+  
+  .box1{
+  text-align: center;
+  display:flex;
+  font-size:20px:
+  margin: 4px;
+  padding: 4px;
+  border: 3px solid black;
+  }
+  .box2{
+
+  display:flex;
+  padding: 4px;
+  }
+  .box3{
+
+  display:flex;
+  padding: 4px;
+  }
+  .box4{
+  
+  display:flex;
+  padding: 4px;
+  }
+  
+  </style>
+</head>
+<body>
+  <article>
+    <h1 align="center"> <u> UNIT-2 </u> </h1>
+    <p>Published on: <time datetime="2024-02-13">February 13, 2024</time></p>
+    <u><h1>Creating DOM</h1></u>
+    <ul>
+        <li>
+            To create a new DOM element in JavaScript, you can use the `createElement()` method to create the element and then append it to an existing element using the `appendChild()` method. Here's an example of how to create a new `&lt;p&gt;` element and append it to the document:<br>
+
+                javascript<br>
+                // Create a new &lt;p&gt; element<br>
+                const para = document.createElement("p");<br>
+                <br>
+                // Create a text node<br>
+                const node = document.createTextNode("This is a new paragraph.");<br>
+                <br>
+                // Append the text node to the &lt;p&gt; element<br>
+                para.appendChild(node);<br>
+                <br>
+                // Append the new element to the document body<br>
+                document.body.appendChild(para);<br>
+                <br>
+                
+                You can also create a new element and append it to a specific existing element by using its `id` or other attributes. For example, to create a new `&lt;p&gt;` element and append it to a `&lt;div&gt;` with the id "myDIV":<br>
+                <br>
+                javascript<br>
+                // Create a new &lt;p&gt; element<br>
+                const para = document.createElement("p");<br>
+                <br>
+                // Set the innerHTML of the &lt;p&gt; element<br>
+                para.innerHTML = "This is a paragraph.";<br>
+                <br>
+                // Append the new element to the existing &lt;div&gt; with id "myDIV"<br>
+                document.getElementById("myDIV").appendChild(para);<br>
+               <br>
+                The `createElement()` method returns the newly created element, which can then be manipulated and added to the DOM as needed.<br>
+                
+                If you want to create a simple paragraph and append it to the document, you can use the following code:<br>
+                <br>
+                javascript<br>
+                // Create a new &lt;p&gt; element<br>
+                let x = document.createElement("p");<br>
+                <br>
+                // Create a text node<br>
+                let t = document.createTextNode("Paragraph is created.");<br>
+                <br>
+                // Append the text node to the &lt;p&gt; element<br>
+                x.appendChild(t);<br>
+                <br>
+                // Append the &lt;p&gt; element to the document body<br>
+                document.body.appendChild(x);<br>
+                <br>
+                This will create a new `&lt;p&gt;` element with the text "Paragraph is created" and append it to the document body.
+                
+               
+        </li>
+    </ul>
+    <u><h1>Doctype</h1></u>
+    <ul><li>
+        The `createElement()` method is used in JavaScript to create a new HTML element in the Document Object Model (DOM). It takes the type of the element to be created as a parameter and returns the newly created element. Here's an example of how to create a new `&lt;p&gt;` element and append it to the document:<br>
+<br>
+            javascript<br>
+            // Create a new &lt;p&gt; element<br>
+            const para = document.createElement("p");<br>
+            <br>
+            // Create a text node<br>
+            const node = document.createTextNode("This is a new paragraph.");<br>
+            <br>
+            // Append the text node to the &lt;p&gt; element<br>
+            para.appendChild(node);<br>
+            <br>
+            // Append the new element to the document body<br>
+            document.body.appendChild(para);<br>
+            <br>
+            This code creates a new `&lt;p&gt;` element, adds text to it, and then appends it to the document body. The `createElement()` method is fully supported in all major browsers.
+            
+
+    </li>
+
+    </ul>
+    <u><h1>
+        Character Encoding
+    </h1></u>
+
+    <ul><li>Character encoding is the process of mapping characters to binary data so that computers can work with text. It is important because it enables text to be stored and transmitted electronically. In JavaScript, character encoding is particularly important, as JavaScript is often used to manipulate and display text data in web applications. The most widely used character encoding standard in modern computing, including in JavaScript, is UTF-8, which is based on Unicode. UTF-8 utilizes variable-length encoding, which means that it uses varying numbers of bytes to represent different characters. This allows it to represent all characters in all languages while being efficient in terms of storage and transmission. When working with character encoding in JavaScript, it is recommended to use UTF-8 encoding for all text data. This is the most widely used and compatible encoding standard.</li></ul>
+	
+    <u><h1>Deprecated Element</h1></u>
+    <ul><li>In the context of HTML, a deprecated element refers to an HTML element that is still allowed but not recommended for use, as it is being replaced by newer alternatives. Deprecated elements may still function, but their usage is discouraged in favor of more modern and supported alternatives. For example, in HTML, the `&lt;center&gt;` tag is deprecated and it is recommended to use the CSS property `text-align: center` instead.
+
+        If you encounter a deprecated element in HTML, it is advisable to use the recommended alternative to ensure compatibility with modern web standards and browsers.</li></ul>
+		
+    <u><h1>HTML 5 document(section,article,aside,header,footer,nav,dialog,figure)</h1></u>
+    <ul><li>In HTML5, several elements serve specific purposes in organizing and structuring the content of a web page. Here's a brief definition of each:<br>
+
+       <strong> 1. Section (`&lt;section&gt;`):</strong> Defines a section in a document and is a thematic grouping of content, typically with a heading. It can be used for chapters, introduction, news items, and contact information.<br>
+        
+       <strong>2. Article (`&lt;article&gt;`):</strong> Represents a self-contained composition in a document, page, application, or site, and is independently distributable or reusable. For example, it could be a forum post, a magazine or newspaper article, a blog entry, or a user-submitted comment.<br>
+        
+        <strong>3. Aside (`&lt;aside&gt;`):</strong> Defines content aside from the page's content, such as a sidebar.<br>
+        
+       <strong> 4. Header (`&lt;header&gt;`):</strong> Represents introductory content or a set of navigational links. It typically contains one or more heading elements, a logo or icon, and authorship information.<br>
+        
+        <strong>5. Footer (`&lt;footer&gt;`):</strong> Defines a footer for a document or section and typically contains authorship information, copyright information, contact information, sitemap, back to top links, or related documents.<br>
+        
+        <strong>6. Nav (`&lt;nav&gt;`):</strong> Defines a set of navigation links, such as a navigation bar or menu.<br>
+        
+        <strong>7. Dialog (`&lt;dialog&gt;`):</strong> Represents a dialog box or other interactive component, such as a window, prompt, or alert.<br>
+        
+        <strong>8. Figure (`&lt;figure&gt;`):</strong> Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc. It is often used in conjunction with the `&lt;figcaption&gt;` element to add a caption to the content.<br>
+        
+        These elements provide a more semantic way to structure and present content in HTML5, making the code easier to write and understand.
+        
+</li></ul>
+<u><h1>Link tag</h1></u>
+<ul>
+    <li>
+        The `&lt;link&gt;` tag in HTML is used to specify the relationship between the current document and an external resource, such as a stylesheet or an icon. The `href` attribute is used to specify the URL of the external resource, while the `rel` attribute is used to specify the relationship between the current document and the external resource. The `rel` attribute can have various values, such as `stylesheet` for a stylesheet, `icon` for an icon, and `preconnect` for preconnecting to a server. The `&lt;link&gt;` tag is typically placed within the `&lt;head&gt;` section of an HTML document. Here's an example of using the `&lt;link&gt;` tag to link to an external stylesheet:<br>
+<br>
+            html<br>
+            &lt;head&gt;<br>
+              &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;<br>
+            &lt;/head&gt;<br>
+            <br>
+            This code links to an external stylesheet named "styles.css" using the `&lt;link&gt;` tag. The `rel` attribute is set to `stylesheet` to indicate that it is a stylesheet, and the `href` attribute specifies the URL of the stylesheet. The `type` attribute is set to `text/css` to indicate that it is a CSS.</li></ul>
+			
+  <u><h1>Web Forms in details</h1></u>
+  <ul><li>
+    Web forms, also known as HTML forms, are a fundamental part of web development, allowing users to enter data or personal information that is then sent to a server for processing. They are embedded into websites, making it easy for users to share their information. Web forms are crucial tools for businesses to obtain the information they need from potential customers. They can be used for various purposes such as collecting contact information, lead generation, gathering shipping information, surveying customers, and facilitating e-commerce checkout.<br>
+
+Web forms can be created using various tools, including HTML, CSS, PHP, and JavaScript. They enhance user experience, offer information, services, and products, and help track online leads and follow up with clients and potential customers. To create an effective web form, it is important to make the purpose of the form clear, choose the appropriate form type, add form fields, embed the form on the website, ensure its security, and test and analyze the results.<br>
+
+In the context of ASP.NET, web forms are part of the ASP.NET web application framework and are included in Visual Studio. They allow for the development of web-based GUI applications and provide flexibility to web pages at runtime and design time. ASP.NET web forms contain various web pages and GUI applications, and they offer features such as server controls, master pages, URL routing, and event handling. They also provide security features, user registration, and authentication.<br>
+
+Overall, web forms are essential for collecting and managing information efficiently, and they play a significant role in creating a positive user experience, tracking leads, and obtaining crucial information from potential customers.
+
+
+  </li></ul>
+  
+  
+  
+  
+  <div class="box1">
+<table align="center"><a href="UNIT 1.HTML">UNIT-1</a></div>
+<div class="box2">
+<table align="center"><a href="UNIT 3.HTML">UNIT-3</a></div>
+<div class="box3">
+<table align="center"><a href="UNIT 4.HTML">UNIT-4</a></div>
+<div class="box4">
+<table align="center"><a href="UNIT 5.HTML">UNIT-5</a></div>
+<div class="box5">
+<table ><a href="index.html">HOME</a></div>
+</Article>
+</body>
+</html>
